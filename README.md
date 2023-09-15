@@ -29,6 +29,8 @@ This package uses the power of OpenAI's GPT-3 model to understand your code chan
 
 `--apiKey`: Your OpenAI API key. It is not recommended to pass `apiKey` here, it is better to use `env` variable
 
+`--hint`: Provide a bit of background on why the change is being made.
+
 ## Contributing
 We'd love for you to contribute to AI-Commit! Here's how:
 
