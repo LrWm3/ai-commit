@@ -5,6 +5,7 @@ function addGitmojiToCommitMessage(commitMessage) {
     fix: "🚑",
     docs: "📝",
     style: "💄",
+    ci: "🤖",
     refactor: "♻️",
     test: "✅",
     chore: "🔧",

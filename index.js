@@ -72,6 +72,8 @@ const generateSingleCommit = async (diff) => {
 - Limit the subject line to 72 characters or less.
 - Capitalize the subject line.
 - Do not end the subject line with a period.
+- The subject line should begin with a conventional commit type, followed by a colon.
+- Conventional commit values are limited to the following: feat, fix, docs, test, refactor, ci, style, chore
 - Limit the body of the message to 256 characters or less.
 - Use a blank line between the subject and the body of the message.
 - Use the body of the message to provide additional context or explain the reasoning behind the changes.
