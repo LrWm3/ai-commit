@@ -64,7 +64,7 @@ const processEmoji = (msg, doAddEmoji) => {
 }
 
 const generateSingleCommit = async (diff) => {
-  const prompt =
+  let prompt =
 `Here are some best practices for writing commit messages:
 - Write clear, concise, and descriptive messages that explain the changes made in the commit.
 - Use the present tense and active voice in the message, for example, "Fix bug" instead of "Fixed bug."
