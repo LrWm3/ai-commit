@@ -74,6 +74,7 @@ const generateSingleCommit = async (diff) => {
 - Do not end the subject line with a period.
 - The subject line should begin with a conventional commit type, followed by a colon.
 - Conventional commit values are limited to the following: feat, fix, docs, test, refactor, ci, style, chore
+- The subject line shall include a scope, which is placed inside parentheses, e.g. "feat(parser): add ability to parse arrays."
 - Limit the body of the message to 256 characters or less.
 - Use a blank line between the subject and the body of the message.
 - Use the body of the message to provide additional context or explain the reasoning behind the changes.
@@ -85,7 +86,7 @@ const generateSingleCommit = async (diff) => {
 - Use a hyphen (-) for the bullet points in the body of the message.
 Write a commit message that accurately summarizes the changes made in the given 'git diff' output, following the best practices listed above and the conventional commit format.
 
-Here is the output of the 'git diff':
+Here is the output of the 'git diff --staged'. Focus on the lines that indicate changes:
 ` + diff;
 
   if (args.hint !== undefined) {
