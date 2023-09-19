@@ -12,16 +12,18 @@ This package uses the power of OpenAI's GPT-3 model to understand your code chan
 
 
 ## How it Works
-1. Install AI-Commit using `npm install -g ai-commit`
-2. Generate an OpenAI API key [here](https://platform.openai.com/account/api-keys )
-3. Set your `OPENAI_API_KEY` environment variable to your API key
+1. Clone this repository
+2. In the repository, run `npm i && sudo npm link -g` to link this application globally
+3. Generate an OpenAI API key [here](https://platform.openai.com/account/api-keys )
+4. Set your `OPENAI_API_KEY` environment variable to your API key
 1. Make your code changes and stage them with `git add .`
 2. Type `ai-commit` in your terminal
 3. AI-Commit will analyze your changes and generate a commit message
 4. Approve the commit message and AI-Commit will create the commit for you ✅
 
 ## Options
-`--list`: Select from a list of 5 generated messages (or regenerate the list)
+
+`--hint`: Provide context as to why the change is being made to help the agent generate a better commit message.
 
 `--force`: Automatically create a commit without being prompted to select a message (can't be used with `--list`)
 
@@ -29,9 +31,9 @@ This package uses the power of OpenAI's GPT-3 model to understand your code chan
 
 `--apiKey`: Your OpenAI API key. It is not recommended to pass `apiKey` here, it is better to use `env` variable
 
-`--hint`: Provide a bit of background on why the change is being made.
 
 ## Contributing
+
 We'd love for you to contribute to AI-Commit! Here's how:
 
 1. Fork the repository
